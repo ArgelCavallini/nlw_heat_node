@@ -1,20 +1,33 @@
 # nlw_heat_node
+# start projeto
+rodar yarn install para instalar todas dependências
+
+necessário criar arquivo .env com as seguintes informações
+GITHUB_CLIENT_SECRET=XXX
+GITHUB_CLIENT_ID=XXX
+JWT_SECRET=XXX
+
+rodar o migrate do prisma
+yarn prisma migrate dev
+
+
+
+---------------------- ANOTAÇÕES ----------------------
 yarn init -y
 yarn add express
 yarn add -D @types/express typescript ts-node-dev
 
-#iniciar tsc -> gera o arquivo tsconfig.json
+# iniciar tsc -> gera o arquivo tsconfig.json
 yarn tsc --init
 
-#start
+# start
 yarn dev
 
-#prisma
+# prisma
 https://www.prisma.io/docs/getting-started/setup-prisma/start-from-scratch/relational-databases-typescript-postgres
 
 yarn add prisma -D
 yarn add @prisma/client
-
 
 # cria o arquivo .env com as configurações e /prisma
 yarn prisma init 
@@ -22,7 +35,7 @@ yarn prisma init
 # credencial com o git
 https://github.com/settings/developers
 
-#ter acesso as variáveis do .env
+# ter acesso as variáveis do .env
 yarn add dotenv
 
 # fazer consulta apis
@@ -36,18 +49,17 @@ yarn add @types/jsonwebtoken -D
 # rodar o migrateee do prisma
 yarn prisma migrate dev
 
-#ver dados banco de dados do prisma no navegador
+# ver dados banco de dados do prisma no navegador
 yarn prisma studio
 
-#web socket
+# web socket
 yarn add socket.io
 yarn add @types/socket.io -D
 
-#cors -> permitir ou barrar requests
+# cors -> permitir ou barrar requests
 yarn add cors
 yarn add @types/cors -D
 
-
-
 yarn install
 Instala todas dependências listadas no package.json em sua pasta local node_modules.
+
